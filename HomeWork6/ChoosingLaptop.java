@@ -56,12 +56,12 @@ public class ChoosingLaptop {
             }
 
             switch (item) {
-                case 1 -> laptopFilter.add("ram", enterIntData(Laptop.ramSizes));
-                case 2 -> laptopFilter.add("hddSize", enterIntData(Laptop.hddSizes));
-                case 3 -> laptopFilter.add("os", enterStrData(Laptop.osNames));
-                case 4 -> laptopFilter.add("color", enterStrData(Laptop.colors));
-                case 5 -> laptopFilter.add("manufacturer", enterStrData(Laptop.manufacturers));
-                case 6 -> {
+                case 1: laptopFilter.add("ram", enterIntData(Laptop.ramSizes));
+                case 2: laptopFilter.add("hddSize", enterIntData(Laptop.hddSizes));
+                case 3: laptopFilter.add("os", enterStrData(Laptop.osNames));
+                case 4: laptopFilter.add("color", enterStrData(Laptop.colors));
+                case 5: laptopFilter.add("manufacturer", enterStrData(Laptop.manufacturers));
+                case 6: {
                     System.out.println(laptopFilter.filterSet);
                     showFiltered(laptopSet, laptopFilter);
                 }
